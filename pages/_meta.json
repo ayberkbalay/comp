@@ -1,0 +1,17 @@
+{
+  "index": "Introduction",
+  "ProductOwner": "Product Owner",
+  "ProductOwnerReports": "Product Owner Reports",
+  "advanced": "Advanced (A Folder)",
+  "Meetings": "Meetings",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/shuding_",
+    "newWindow": true
+  }
+}
