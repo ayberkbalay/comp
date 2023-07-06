@@ -1,0 +1,51 @@
+import { Steps } from 'nextra-theme-docs'
+
+<Steps>
+
+# Otomasyon
+
+Otomasyon Yazımı
+
+Jira otomasyon yazımı ile mevcut işleri otomatikleştirmekte yetkin bir yazılımdır. Her proje otomasyonunda 3 adet hazır kural vardır. Bunlar:
+Otomasyon Yazımı
+### Adım 1
+Jira otomasyon yazımı ile mevcut işleri otomatikleştirmekte yetkin bir yazılımdır. Her proje otomasyonunda 3 adet hazır kural vardır. Bunlar:
+
+1-	When all stories are completed -> the close epic ( Açık olmalı)
+
+2-	When an issue is transitioned -> then automatically assign (kapalı olmalı)
+
+3-	When epic is completed -> then close all stories present ( opsiyonel)
+
+### Adım 2
+Önerilen kurallar:
+
+1-	When an issue is transitioned to In Progress -> set Actual Start field to current date. (KÜTÜPHANEDEN ALINIP DEĞİŞTİRİLMİŞTİR)
+
+a.	Issue Transitioned ( From Status : Boş , To Status: In Progress)
+b.	Then edit issue fields Actual Start 
+
+2-	When an issue is transitioned to Done -> set Actual End field to current date. (KÜTÜPHANEDEN ALINIP DEĞİŞTİRİLMİŞTİR)
+
+a.	Issue Transitioned ( From Status : Boş , To Status: Done)
+b.	Then edit issue fields Actual End 
+
+3-	When parent is done -> move all sub-tasks to done (KÜTÜPHANEDE VAR)
+
+4-	When sub-tasks are done -> move parent to done (KÜTÜPHANEDE VAR)
+
+5-	When an issue remains for 3 days without an update-> send a notification to the Assignnee (KÜTÜPHANEDE VAR GÜN SAYISI DEĞİŞTİRİLMİŞTİR)
+
+a.	Scheduled ( Run rule every: 1 days, at: 10.00 AM turkey, JQL: ,
+b.	If block (Assignee is not empty)
+c.	Then: Send Mail ( 3 gündür güncellenmemiştir, Content: Merhaba , Aşağıdaki iş 3 gündür güncellenmemiştir.
+
+6-	When a task is near due -> sende mail reminder (KÜTÜPHANEDE VAR)
+
+7-	When a pull request is merged -> Then move issue to done (Ekibe göre, tavsiye edilir, KÜTÜPHANEDE VAR)
+
+Eklenmek istenen otomasyonlar, Direktör ve Proje Teknik Lideri tarafından onaylanır.
+
+</Steps>
+
+
